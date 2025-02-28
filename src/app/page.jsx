@@ -13,11 +13,11 @@ export default function Home() {
       setLoading(true);
       const { error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
-        option: {
-          redirectTo: `https://whatdidyoudolastweek.biz/auth/callback`,
+        options: {
+          redirectTo: `${process.env.NEXT_PUBLIC_SITE_URL}/auth/callback`,
         }
       });
-
+  
       if (error) throw error;
     } catch (error) {
       console.error('Error signing in with Google:', error.message);
