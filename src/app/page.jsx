@@ -1,6 +1,6 @@
 "use client";
-
 import { useState, useEffect } from "react";
+import { FcGoogle } from "react-icons/fc";
 import supabase from "../Supabaseclient";
 
 
@@ -105,10 +105,11 @@ export default function Home() {
           <button
             onClick={signInWithGoogle}
             disabled={loading}
-            className="mt-8 bg-gray-800/50 backdrop-blur-sm p-4 rounded-xl w-full max-w-md border border-blue-900/30 shadow-lg shadow-blue-900/10 hover:bg-blue-900/50 transition-colors disabled:opacity-50"
+            className="mt-8 bg-gray-800/50 backdrop-blur-sm p-4 rounded-xl w-full border border-blue-900/30 shadow-lg shadow-blue-900/10 hover:bg-blue-900/50 transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
           >
-            {loading ? 'Signing in...' : 'Sign in with Google'}
-          </button>
+            <FcGoogle className="w-5 h-5" />
+            <span>{loading ? 'Locking in...' : 'Sign in with Google'}</span>
+        </button>
         ) : (
           <div className="mt-8">
             {/* Note: I kept your original layout but only showing the button as per your example */}
