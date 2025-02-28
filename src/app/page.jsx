@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import supabase from "../Supabaseclient";
-import { Analytics } from "@vercel/analytics/react"
+
 
 export default function Home() {
   const [user, setUser] = useState(null);
