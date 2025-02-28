@@ -13,13 +13,9 @@ export default function Home() {
       setLoading(true);
       const { error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
-        options: {
-          redirectTo: window.location.origin,
-          queryParams: {
-            access_type: 'offline',
-            prompt: 'consent',
-          },
-        },
+        option: {
+          redirectTo: `https://whatdidyoudolastweek.biz/auth/callback`,
+        }
       });
 
       if (error) throw error;
@@ -105,7 +101,7 @@ export default function Home() {
           What did you do last week?
         </h1>
         <p className="text-md md:text-lg text-gray-400 mt-2 font-mono">
-          AI Musk will email you Sunday at 7:30 AM PST. Respond by Monday 11:59 PM PST.
+          AI Musk will email you on Sunday. Respond by Monday 11:59 PM PST.
         </p>
 
         {!user ? (
