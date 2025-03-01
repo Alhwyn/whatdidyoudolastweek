@@ -94,7 +94,7 @@ export default function Home() {
   return (
     <div className="h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-blue-950 to-black text-white">
       <div className="text-center px-4">
-        <h1 className="text-3xl md:text-4xl font-light tracking-wide text-blue-200 drop-shadow-lg">
+        <h1 className="text-3xl md:text-4xl font-light tracking-wide text-blue-50 drop-shadow-lg">
           What did you do last week?
         </h1>
         <p className="text-md md:text-lg text-gray-400 mt-2 font-mono">
