@@ -9,7 +9,7 @@ export async function POST(request) {
 
     const { input } = await request.json();
 
-    const prompt = `As Elon Musk, evaluate the following weekly accomplishments from current Fed employees and determine if this person should be hired or fired. Be witty and direct:
+    const prompt = `As Elon Musk, evaluate the following weekly accomplishments and determine if this person should be hired or fired. Be witty and direct:
 
     Accomplishments:
     ${input}
