@@ -22,3 +22,17 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@keyframes elonBounce {
+  0%, 100% {
+    transform: translateY(0) scaleX(1); /* Normal scale (no mirror) */
+  }
+  50% {
+    transform: translateY(-30%) scaleX(-1); /* Bounce up and mirror (horizontal flip) */
+  }
+}
+
+.animate-elon-bounce {
+  animation: elonBounce 1.5s infinite;
+}

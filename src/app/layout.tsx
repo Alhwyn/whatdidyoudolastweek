@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body>
-        {children}
+        {children} 
         <Analytics />
         <SpeedInsights/>
       </body>
