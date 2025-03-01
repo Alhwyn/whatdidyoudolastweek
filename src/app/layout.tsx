@@ -5,7 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "What did you do last week?",
-  description: "Sign up for email to get a weekly reminder to reflect.",
+  description: "evaluate your five bullet points of what you accomplish to determine if you're hired or fired.",
   icons: {
     icon: [
       { url: './favicon/favicon.ico' },
