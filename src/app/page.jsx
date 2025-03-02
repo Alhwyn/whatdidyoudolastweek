@@ -134,6 +134,7 @@ export default function Main() {
                   className="w-6 h-6 sm:w-8 sm:h-8"
                 />
               </a>
+              
             </div>
           )}
         </div>
@@ -146,13 +147,6 @@ export default function Main() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors duration-200 text-xs sm:text-sm"
           >
-            <Image
-              src="/icons8-x-48-2.png"
-              width={16}
-              height={16}
-              alt="X (Twitter) icon"
-              className="w-4 h-4 sm:w-5 sm:h-5"
-            />
             <span>@alhwynn</span>
           </a>
         </div>
