@@ -7,9 +7,9 @@ export const metadata: Metadata = {
   title: "What did you do last week?",
   description: "evaluate your five bullet points of what you accomplish to determine if you're hired or fired.",
   icons: {
-    icon: [
-      { url: './favicon/favicon.ico' },
-    ],
+    icon: '/favicon.ico',
+    apple: '/apple-icon.png',
+    shortcut: '/favicon.ico',
   },
 };
 
@@ -20,7 +20,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head />
       <body>
         {children} 
         <Analytics />
