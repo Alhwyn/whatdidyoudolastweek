@@ -44,6 +44,10 @@ export default function Main() {
 
   return (
     <div className="h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-blue-950 to-black text-white">
+      <div className="absolute top-0 right-0 mt-4 mr-4">
+        <a href="https://www.producthunt.com/posts/what-did-you-do-last-week?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-what&#0045;did&#0045;you&#0045;do&#0045;last&#0045;week" target="_blank"><Image src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=925646&theme=dark&t=1740894799068" alt="What&#0032;did&#0032;you&#0032;do&#0032;last&#0032;week&#0063; - Evaluates&#0032;your&#0032;5&#0032;bullet&#0032;points | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+      
+      </div>
       <div className="text-center px-4">
         <h1 className="text-3xl md:text-4xl font-light tracking-wide text-blue-50 drop-shadow-lg">
           What did you do last week?
@@ -51,7 +55,6 @@ export default function Main() {
         <p className="text-md md:text-lg text-gray-400 mt-2 font-mono">
           AI Musk will evaluate your five bullet points of what you accomplish to determine if you're hired or fired.
         </p>
-
         {/* Container for the textarea, button, and loading indicator */}
         <div className="relative mt-6 max-w-2xl mx-auto">
           <textarea
@@ -65,17 +68,24 @@ export default function Main() {
             maxLength="5000"
           />
 
-
           <button
-            className={`absolute top-2 right-3 bg-gray-600 bg-opacity-20 text-white px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-transform duration-200 ${
-              loading ? "cursor-not-allowed opacity-50" : "hover:bg-opacity-50 hover:scale-105"
-            }`}
+            className={`
+              absolute top-2 right-3 
+              bg-gray-600 bg-opacity-20 
+              text-white px-4 py-2 
+              rounded-lg 
+              focus:outline-none focus:ring-2 focus:ring-blue-500 
+              transition-all duration-200 ease-in-out
+              ${loading 
+                ? "cursor-not-allowed opacity-50" 
+                : "hover:bg-opacity-50 hover:scale-105 hover:shadow-lg hover:text-blue-200 hover:ring-2 hover:ring-white-200"
+              }
+            `}
             onClick={handleSubmit}
             disabled={loading}
           >
             {loading ? "Checking..." : "Check"}
           </button>
-
           {loading && (
             <div className="absolute inset-0 flex items-center justify-center rounded-lg">
               <Image
@@ -108,13 +118,31 @@ export default function Main() {
                 alt="Twitter icon"
               />
             </a>
-
-
           </div>
             
           )}
         </div>
       </div>
+
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+        <a
+          href="https://x.com/alhwynn"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors duration-200"
+        >
+          <Image
+            src="/icons8-x-48-2.png"
+            width={32}
+            height={32}
+            alt="X (Twitter) icon"
+          />
+          <span className="text-sm">@alhwynn</span>
+        </a>
+      </div>
+      
+
+      
     </div>
   );
 }
