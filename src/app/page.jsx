@@ -125,10 +125,11 @@ export default function Main() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                
                 <Image
                   src="/icons8-x-48-2.png"
-                  width={24}
-                  height={24}
+                  width={36}
+                  height={36}
                   alt="Twitter icon"
                   className="w-6 h-6 sm:w-8 sm:h-8"
                 />
