@@ -63,7 +63,7 @@ export default function Main() {
           What did you do last week?
         </h1>
         <p className="text-sm sm:text-md md:text-lg text-gray-400 font-mono mb-6">
-          AI Musk will evaluate your five bullet points of what you accomplish to determine if you're hired or fired.
+          AI Musk will evaluate your five bullet points of what you accomplish to determine if you're hired or fired
         </p>
   
         <div className="relative w-full">
