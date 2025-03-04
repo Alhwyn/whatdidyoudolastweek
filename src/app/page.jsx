@@ -44,19 +44,6 @@ export default function Main() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-blue-950 to-black text-white p-4">
-      {/* Product Hunt Badge - Hide on small screens */}
-      <div className="absolute top-0 right-0 mt-4 mr-4 hidden sm:block">
-        <a href="https://www.producthunt.com/posts/what-did-you-do-last-week?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-what&#0045;did&#0045;you&#0045;do&#0045;last&#0045;week" 
-           target="_blank">
-          <Image 
-            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=925646&theme=dark&t=1740894799068" 
-            alt="What did you do last week? - Product Hunt" 
-            width={250} 
-            height={54} 
-            className="w-auto h-auto"
-          />
-        </a>
-      </div>
   
       <div className="text-center w-full max-w-2xl px-4 py-6 sm:py-8">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-light tracking-wide text-blue-50 drop-shadow-lg mb-4">
